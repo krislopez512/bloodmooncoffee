@@ -60,7 +60,7 @@
   color: white;
 }
 
-.nave__itemLineOne {
+.nav__itemLineOne {
   font-size: 10px;
 }
 
@@ -69,12 +69,11 @@
   font-weight: 800;
 }
 
-.nav_itemShoppingCart {
+.nav__itemShoppingCart {
   display: flex;
   align-items: center;
   color: white;
-  margin-right: 50px;
-  margin-left: 100px;
+  margin: auto;
 
 }
 

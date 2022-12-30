@@ -4,7 +4,7 @@ import StorefrontIcon from "@mui/icons-material/Storefront";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-export default function Header() {
+function Header() {
   return (
     <div className="header">
       <div className="header__logo">
@@ -24,14 +24,13 @@ export default function Header() {
           <span className="nav__itemLingOne">Your </span>
           <span className="nav__itemLineTwo">Shop</span>
         </div>
-        <div className="nav__item">
-          <ShoppingCartIcon
-            className="nav__itemShoppingCart"
-            fontSize="large"
-          />
+        <div className="nav__itemShoppingCart">
+          <ShoppingCartIcon />
           <span className="nav__itemLineTwo nav__shoppingCartCount">0</span>
         </div>
       </div>
     </div>
   );
 }
+
+export default Header;
