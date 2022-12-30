@@ -1,21 +1,27 @@
 import React from "react";
 import "../styles/Product.css";
 
-function Product() {
+
+// Bringing props over from Home.js via id, title, image, price, rating
+function Product({ id, title, image, price, rating }) {
   return (
     <div className="product">
       <div className="product__info">
-        <p>Colombia Medium Roast Whole Bean Coffee</p>
+        <p>{title}</p>
         <p className="product__price">
           <small>$</small>
-          <strong>30</strong>
+          <strong>{price}</strong>
         </p>
-        <div className="product__rating">⭐⭐⭐⭐⭐</div>
+        <div className="product__rating">
+           {/* Below is array.fill.map method  */}
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <p>⭐</p>
+            ))}
+        </div>
       </div>
-      <img
-        src="https://m.media-amazon.com/images/I/7121M8H6isL._AC_UL320_.jpg"
-        alt=""
-      />
+      <img src={image} />
       <button>Add to Cart</button>
     </div>
   );
