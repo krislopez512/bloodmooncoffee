@@ -29,10 +29,10 @@
 
 .product > button {
   background: #dc143c;
-  border: 1px solid;
+  
   margin-top: 10px;  
-  border-color: #111;
-  color: #111;
+  
+  color: white;
   
 }
 .product__price {
