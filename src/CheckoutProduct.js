@@ -4,6 +4,15 @@ import { useStateValue } from "./StateProvider";
 
 function CheckoutProduct({ id, image, title, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
+
+  const isInBasket = basket.find((item) => item.id === id);
+
+  if (isInBasket) {
+    console.log("Product is in the basket");
+  } else {
+    console.log("Product is not in the basket");
+  }
+
   const removeFromBasket = () => {
     dispatch({
       type: "REMOVE_FROM_BASKET",
