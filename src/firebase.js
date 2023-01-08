@@ -29,13 +29,18 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBv6zEONDVJSxOlkxmyUVto6eWksYVXwSU",
-    authDomain: "eshop-c2e0a.firebaseapp.com",
-    projectId: "eshop-c2e0a",
-    storageBucket: "eshop-c2e0a.appspot.com",
-    messagingSenderId: "941031253944",
-    appId: "1:941031253944:web:0bc5a43bc9fe9af86e514d",
-    measurementId: "G-5BDLQRB305"
+    apiKey: "AIzaSyDF0PRL0DH7L3mP_huFzRBQJvNQD-VdULo",
+
+  authDomain: "bloodmoon-coffee-5f379.firebaseapp.com",
+
+  projectId: "bloodmoon-coffee-5f379",
+
+  storageBucket: "bloodmoon-coffee-5f379.appspot.com",
+
+  messagingSenderId: "221289975456",
+
+  appId: "1:221289975456:web:b15d709e7789d3e8c243c5"
+
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
